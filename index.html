@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <div class="input-group">
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            <input type="number" id="shift" placeholder="Desplazamiento" min="0" value="3">
+        </div>
+        <div class="button-group">
+            <button onclick="encriptarTexto()">Encriptar</button>
+            <button onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+        <div class="output-group">
+            <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+        </div>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
